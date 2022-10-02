@@ -66,7 +66,7 @@ def draw_heat_map():
     fig, ax = plt.subplots(dpi=300)
 
     # Draw the heatmap with 'sns.heatmap()'
-    sns.color_palette("rocket")
+    sns.color_palette("Set2")
     sns.heatmap(corr, mask=mask, annot=True, annot_kws={'size': 6},
                 linewidths=.5, vmax=.3, center=0, fmt='.1f')
     # Do not modify the next two lines
